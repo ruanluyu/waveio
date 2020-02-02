@@ -42,7 +42,7 @@ extern int open(
 extern int send(double signal_channel_0,double signal_channel_1 = .0);    
 ```
 - signal_channel_0: send one signal to mono channel or L channel of stereo. 
-- signal_channel_0: send one signal to the R channel of stereo. 
+- signal_channel_1: send one signal to the R channel of stereo. 
 - Signal range: -1.0 ~ 1.0.
 
 ### close:
