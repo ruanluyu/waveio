@@ -13,7 +13,6 @@ make
 
 ## Run:
 ```cmd
-#Run
 ./waveio
 ```
 
@@ -36,7 +35,7 @@ extern int open(
 - samples_per_second: samples per second
 - bytes_per_sample: bytes per sample. (1 or 2)
 - channels_num: 1 for mono, 2 for stereo
-
+- return: ==0:ok, <0: error.
 ### send:
 ```cpp
 extern int send(double signal_channel_0,double signal_channel_1 = .0);    
@@ -44,8 +43,9 @@ extern int send(double signal_channel_0,double signal_channel_1 = .0);
 - signal_channel_0: send one signal to mono channel or L channel of stereo. 
 - signal_channel_1: send one signal to the R channel of stereo. 
 - Signal range: -1.0 ~ 1.0.
-
+- return: ==0:ok, <0: error.
 ### close:
 ```cpp
 extern int close();
 ```
+- return: ==0:ok, <0: error.
